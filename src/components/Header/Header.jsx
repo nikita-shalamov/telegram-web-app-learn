@@ -1,7 +1,10 @@
 import React from 'react';
 import Button from '../Button/Button';
+import { useTelegram } from '../../hooks/useTelegram';
 
 const Header = () => {
+
+    const {tg, onClose} = useTelegram()
 
     const tg = window.Telegram.WebApp;
 
